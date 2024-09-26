@@ -1,0 +1,31 @@
+{
+    "header": {
+        "about": "About",
+        "projects": "My projects",
+        "contact": "Contact",
+        "login": "Login",
+        "mode": "Theme"
+    },
+    "main": {
+        "part1": {
+            "subtitle": "Web developer full stack Javascript"
+        },
+        "about": {
+            "subtitle": "About me"
+        },
+        "skills": {
+            "subtitle": "My skills",
+            "server": "server",
+            "tools": "database"
+        },
+        "projects": {
+            "subtitle": "My Projects",
+            "all": "All",
+            "link": "Link to the code..."
+        }
+    },
+    "footer" : {
+        "contact": "Contact",
+        "subtitle": "Website coded with React and Node JS"
+    }
+}

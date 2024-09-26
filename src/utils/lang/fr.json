@@ -1,0 +1,31 @@
+{
+    "header": {
+        "about": "A propos",
+        "projects": "Mes projets",
+        "contact": "Contact",
+        "login": "Se Connecter",
+        "mode": "Mode"
+    },
+    "main": {
+        "part1": {
+            "subtitle": "Développeur web full stack Javascript"
+        },
+        "about": {
+            "subtitle": "A propos"
+        },
+        "skills": {
+            "subtitle": "Mes compétences",
+            "server": "serveur",
+            "tools": "base de données"
+        },
+        "projects": {
+            "subtitle": "Mes Projets",
+            "all": "Tous",
+            "link": "Voir le code..."
+        }
+    },
+    "footer" : {
+        "contact": "Me contacter",
+        "subtitle": "Site rélalisé avec React et Node JS"
+    }
+}
