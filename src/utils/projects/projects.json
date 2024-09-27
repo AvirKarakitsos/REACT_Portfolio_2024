@@ -1,0 +1,20 @@
+[
+    {
+        "_id":1,
+        "title":"React",
+        "imageUrl":"",
+        "tags":"Hooks, Router, SCSS, BEM",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Refonte de la partie frontend d'un site immobilier. J'ai appris les bases de React avec la construction du code à l'aide de composants. J'ai pu utiliser la librairie react-router-dom, ainsi que les hooks useState et useEffect. De façon générale j'ai appris l'avantage de travailler avec la librairie React. A noter sur ce projet l'utilisation de SCSS avec l’architecture BEM qui m'a plutôt convaincu."
+            },
+            {
+                "language":"en",
+                "text":"Rebuild of the frontend part of the real estate website. I’ve learned the fondamentals of React, coding with reusable components. I used the package react-router-dom and hooks (useState, useEffect). Globally I’ve  learned the benefits of working with React. You can notice that the stylesheet is made with SCSS and BEM structure that I liked to work with."
+            }
+        ],
+        "links":"https://github.com/AvirKarakitsos/OC_project6_react",
+        "category":"openclassrooms"
+    }
+]

@@ -5,16 +5,47 @@ import twitter from '../assets/images/x-logo.jpg'
 import instagram from '../assets/images/insta.png'
 import gmail from '../assets/images/gmail.png'
 
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { translate } from '../utils/common'
 import { ThemeContext } from '../utils/context/ThemeContext'
 import { LanguageContext } from '../utils/context/LanguageContext'
 import { ThemeContextType, LanguageContextType } from '../utils/types/context'
+import projects from '../utils/projects/projects.json'
+
+type ContentType = {
+    language: string,
+    text: string
+}
+
+type ProjectType = {
+    _id: number,
+    title: string,
+    tags: string,
+    content: ContentType[]
+    links: string,
+    category: string,
+};
 
 
 function Main() {
     const {theme} = useContext(ThemeContext) as ThemeContextType
     const {lang} = useContext(LanguageContext) as LanguageContextType
+    const [table, setTable] = useState<ProjectType[]>([])
+    const [tag, setTag] = useState("all")
+
+    const handleFilter = function(tag: string) {
+		if(tag === "all") {
+			setTable(projects)
+            console.log(projects)
+		}
+		else {
+            console.log("Erreur!")
+			// const copy = [...projects]
+			// const filter = copy?.filter(element => element.category === tag)
+			//setTable(filter)
+		}
+		setTag(tag)
+	}
 
     return(
         <main className={styles["main-container"]}>
@@ -34,6 +65,25 @@ function Main() {
                     </ul>
                 </div>
             </section>
+
+            <section id="project" className="section-1 flex direction-column medium-row-gap">
+                <h2 className="text-center">{translate(lang).main.projects.subtitle}</h2>
+                <ul className={styles["project-filter"]}>
+                    <li 
+                        data-tag="all" 
+                        className="list-filter" 
+                        onClick={() => handleFilter("all")}
+                        >
+                        <button className={tag === "all" ? "btn-filter btn bg-green no-border" : "btn-filter btn bg-green-opacity no-border"}>{translate(lang).main.projects.all}</button>
+                    </li>
+                    {/* { allCategories?.map( category => <Category category={category} handleFilter={handleFilter} tag={tag} key={category._id}/>) } */}
+                </ul>
+                
+                {/* <div className={styles["box-container"]}>
+                    { table.map(project => <Card key={project._id} project={project} setModal={setModal} setVideo={setVideo}/>) }
+                </div> */}
+            </section>
+
         </main>
     )
 }
