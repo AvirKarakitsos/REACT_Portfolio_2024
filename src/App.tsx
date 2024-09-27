@@ -3,6 +3,7 @@ import { LanguageProvider } from './utils/context/LanguageContext.js';
 
 import Header from './Components/Header.js';
 import Footer from './Components/Footer.js';
+import Main from './Components/Main.js';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
 	<ThemeProvider>
 		<LanguageProvider>
 			<Header/>
+			<Main/>
 			<Footer/>
 		</LanguageProvider>
 	</ThemeProvider>
