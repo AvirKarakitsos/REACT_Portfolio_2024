@@ -11,21 +11,8 @@ import { ThemeContext } from '../utils/context/ThemeContext'
 import { LanguageContext } from '../utils/context/LanguageContext'
 import { ThemeContextType, LanguageContextType } from '../utils/types/context'
 import projects from '../utils/projects/projects.json'
-
-type ContentType = {
-    language: string,
-    text: string
-}
-
-type ProjectType = {
-    _id: number,
-    title: string,
-    tags: string,
-    content: ContentType[]
-    links: string,
-    category: string,
-};
-
+import { ProjectType } from '../utils/types/project'
+import Card from './Card'
 
 function Main() {
     const {theme} = useContext(ThemeContext) as ThemeContextType
@@ -36,7 +23,7 @@ function Main() {
     const handleFilter = function(tag: string) {
 		if(tag === "all") {
 			setTable(projects)
-            console.log(projects)
+            //console.log(projects)
 		}
 		else {
             console.log("Erreur!")
@@ -79,9 +66,10 @@ function Main() {
                     {/* { allCategories?.map( category => <Category category={category} handleFilter={handleFilter} tag={tag} key={category._id}/>) } */}
                 </ul>
                 
-                {/* <div className={styles["box-container"]}>
-                    { table.map(project => <Card key={project._id} project={project} setModal={setModal} setVideo={setVideo}/>) }
-                </div> */}
+                <div className={styles["box-container"]}>
+                    {/* { table.map(project => <Card key={project._id} project={project} setModal={setModal} setVideo={setVideo}/>) } */}
+                    { table.map(project => <Card key={project._id} project={project}/>) }
+                </div>
             </section>
 
         </main>

@@ -14,7 +14,25 @@
                 "text":"Rebuild of the frontend part of the real estate website. I’ve learned the fondamentals of React, coding with reusable components. I used the package react-router-dom and hooks (useState, useEffect). Globally I’ve  learned the benefits of working with React. You can notice that the stylesheet is made with SCSS and BEM structure that I liked to work with."
             }
         ],
-        "links":"https://github.com/AvirKarakitsos/OC_project6_react",
+        "link":"https://github.com/AvirKarakitsos/OC_project6_react",
+        "category":"openclassrooms"
+    },
+    {
+        "_id":2,
+        "title":"Node JS",
+        "imageUrl":"",
+        "tags":"API REST, bcrypt, token, multer, sharp",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Réalisation de la partie backend d'un site de notation de livres. Création d'une RestAPI. Travailler avec Express JS permet de comprendre les différentes étapes pour coder la partie serveur : création des routes, des controllers, des models... Au final ce projet m'a permis d'utiliser plusieurs librairies comme pour l'authentification et la sécurité du site. Mais également comment traiter une image avec les libraires multer et sharp."
+            },
+            {
+                "language":"en",
+                "text":"I coded the backend of a website which rates books. I built a RestAPI. Working with Express JS helps me understand the different steps of the code structure : routers, controllers, models… Eventually I used several packages for the authentification and the security of the site but also how to process an image with multer and sharp packages."
+            }
+        ],
+        "link":"https://github.com/AvirKarakitsos/OC_project7_node_express_mongodb",
         "category":"openclassrooms"
     }
 ]
