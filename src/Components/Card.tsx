@@ -9,10 +9,11 @@ import { ProjectType } from '../utils/types/project';
 import { ThemeContextType, LanguageContextType } from '../utils/types/context';
 
 type CardProps = {
-    project: ProjectType
+    project: ProjectType,
+    setModal: (input: boolean) => void
 }
 
-function Card({project}: CardProps) {
+function Card({project, setModal}: CardProps) {
     const { theme } = useContext(ThemeContext) as ThemeContextType
     const { lang } = useContext(LanguageContext) as LanguageContextType
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -39,9 +40,9 @@ function Card({project}: CardProps) {
     //     setModal(true)
     // }
 
-    // function handleModal(id) {
-    //     getRequest(`projects/${id}/video`,option)
-    // }
+    function handleModal() {
+        setModal(true)
+    }
   
     return (
         <article 
@@ -54,7 +55,7 @@ function Card({project}: CardProps) {
             </div>
             <div>
                 {/* <picture onClick={() => handleModal(project._id)}> */}
-                <picture>
+                <picture  onClick={() => handleModal()}>
                     <source media="(max-width: 315px)" srcSet={smallUrl}/>
                     <img className={styles.image} src={project.imageUrl} alt={`projet ${project.title}`}/>
                 </picture>

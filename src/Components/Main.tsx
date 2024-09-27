@@ -13,12 +13,14 @@ import { ThemeContextType, LanguageContextType } from '../utils/types/context'
 import projects from '../utils/projects/projects.json'
 import { ProjectType } from '../utils/types/project'
 import Card from './Card'
+import Modal from './Modal'
 
 function Main() {
     const {theme} = useContext(ThemeContext) as ThemeContextType
     const {lang} = useContext(LanguageContext) as LanguageContextType
     const [table, setTable] = useState<ProjectType[]>([])
     const [tag, setTag] = useState("all")
+    const [modal, setModal] = useState(false)
 
     const handleFilter = function(tag: string) {
 		if(tag === "all") {
@@ -53,6 +55,8 @@ function Main() {
                 </div>
             </section>
 
+            <Modal  modal={modal} setModal={setModal}/>
+
             <section id="project" className="section-1 flex direction-column medium-row-gap">
                 <h2 className="text-center">{translate(lang).main.projects.subtitle}</h2>
                 <ul className={styles["project-filter"]}>
@@ -68,7 +72,7 @@ function Main() {
                 
                 <div className={styles["box-container"]}>
                     {/* { table.map(project => <Card key={project._id} project={project} setModal={setModal} setVideo={setVideo}/>) } */}
-                    { table.map(project => <Card key={project._id} project={project}/>) }
+                    { table.map(project => <Card key={project._id} project={project} setModal= {setModal}/>) }
                 </div>
             </section>
 
