@@ -55,6 +55,15 @@ function Main() {
                 </div>
             </section>
 
+            <section>
+                <ul>
+                    <li>{translate(lang).main.about.subtitle}</li>
+                    <li>{translate(lang).main.skills.subtitle}</li>
+                </ul>
+                <p>{translate(lang).main.about.content}</p>
+                <p>{translate(lang).main.skills.content}</p>
+            </section>
+
             <Modal  modal={modal} setModal={setModal}/>
 
             <section id="project" className="section-1 flex direction-column medium-row-gap">
