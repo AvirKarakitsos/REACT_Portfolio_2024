@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    column-gap: 5px;
+    list-style-type: none;
+}
+
+.item {
+    padding: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: grey;
+    cursor: default;
+}
+
+.itemSelected {
+    padding: 15px;
+    margin-bottom: 0;
+    font-size: 18px;
+    border-radius: 5px 5px 0 0;
+    background-color: grey;
+    cursor: default;
+}
+
+.content {
+    border-radius: 5px;
+    background-color: grey;
+}
+
+.contentAbout {
+    border-radius: 0 5px 5px 5px;
+    background-color: grey;
+}

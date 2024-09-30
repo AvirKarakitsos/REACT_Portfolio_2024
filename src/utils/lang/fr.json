@@ -11,12 +11,14 @@
             "subtitle": "Développeur web full stack Javascript"
         },
         "about": {
-            "subtitle": "A propos",
-            "content": "En reconversion développeur web. Après m'être auto formé en apprenant les bases de HTML, CSS et Javascript, j'ai pu tester côté client Vue js et côté serveur php avec le framework Laravel. J'ai suivi en 2023 la formation Openclassrooms développeur web afin de professionnaliser ma démarche et ainsi devenir développeur Javascript."
+            "tab": "A propos",
+            "subtitle": "Mon Parcours",
+            "content_1": "En reconversion développeur web. Après m'être auto formé en apprenant les bases de HTML, CSS et Javascript, j'ai pu tester côté client Vue js et côté serveur php avec le framework Laravel. J'ai suivi en 2023 la formation Openclassrooms développeur web afin de professionnaliser ma démarche et ainsi devenir développeur Javascript.",
+            "content_2": "En scrollant sur cette page vous découvrirez mes projets personnels ainsi que mes projets chez Openclassrooms. Vous pouvez cliquez sur l'image afin de visionner une démonstration du site. L'ensemble du code est disponible sur mon github."
         },
         "skills": {
-            "subtitle": "Mes compétences",
-            "content": "En scrollant sur cette page vous découvrirez mes projets personnels ainsi que mes projets chez Openclassrooms. Vous pouvez cliquez sur l'image afin de visionner une démonstration du site. L'ensemble du code est disponible sur mon github.",
+            "tab": "Compétences",
+            "subtitle": "Mon Compétences",
             "server": "serveur",
             "tools": "base de données"
         },

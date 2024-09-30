@@ -14,6 +14,7 @@ import projects from '../utils/projects/projects.json'
 import { ProjectType } from '../utils/types/project'
 import Card from './Card'
 import Modal from './Modal'
+import Information from './Information'
 
 function Main() {
     const {theme} = useContext(ThemeContext) as ThemeContextType
@@ -55,14 +56,7 @@ function Main() {
                 </div>
             </section>
 
-            <section>
-                <ul>
-                    <li>{translate(lang).main.about.subtitle}</li>
-                    <li>{translate(lang).main.skills.subtitle}</li>
-                </ul>
-                <p>{translate(lang).main.about.content}</p>
-                <p>{translate(lang).main.skills.content}</p>
-            </section>
+           <Information/>
 
             <Modal  modal={modal} setModal={setModal}/>
 
