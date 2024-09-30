@@ -16,11 +16,9 @@ function Information() {
                 <li className={tab === "about" ? styles.itemSelected : styles.item} onClick={() => setTab("about")}>{translate(lang).main.about.tab}</li>
                 <li className={tab === "skills" ? styles.itemSelected : styles.item} onClick={() => setTab("skills")}>{translate(lang).main.skills.tab}</li>
             </ul>
-            <div className={tab === "about" ? styles.contentAbout : styles.content}>
-                {tab == "about" 
-                    ? <About/>
-                    : <Skills/>
-                }
+            <div className={`relative ${tab === "about" ? styles.contentAbout : styles.content}`}>
+                <About tab={tab}/>
+                <Skills tab={tab}/>
             </div>
         </section>
     )

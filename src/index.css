@@ -175,6 +175,10 @@ row-gap: 5px;
   padding: 20px 30px;
 }
 
+.section-5 {
+  width: 720px;
+}
+
 .btn {
   padding: 10px 15px;
   border-radius: 30px;

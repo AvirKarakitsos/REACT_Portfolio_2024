@@ -1,0 +1,11 @@
+.show {
+    width: 720px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1500ms;
+}
+
+.hidden {
+    transform: translateX(-720px);
+}

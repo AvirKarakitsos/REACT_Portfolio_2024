@@ -10,8 +10,8 @@ import { translate } from '../utils/common'
 import { ThemeContext } from '../utils/context/ThemeContext'
 import { LanguageContext } from '../utils/context/LanguageContext'
 import { ThemeContextType, LanguageContextType } from '../utils/types/context'
-import projects from '../utils/projects/projects.json'
 import { ProjectType } from '../utils/types/project'
+import projects from '../utils/projects/projects.json'
 import Card from './Card'
 import Modal from './Modal'
 import Information from './Information'
@@ -19,7 +19,7 @@ import Information from './Information'
 function Main() {
     const {theme} = useContext(ThemeContext) as ThemeContextType
     const {lang} = useContext(LanguageContext) as LanguageContextType
-    const [table, setTable] = useState<ProjectType[]>([])
+    const [table, setTable] = useState<ProjectType[]>(projects)
     const [tag, setTag] = useState("all")
     const [modal, setModal] = useState(false)
 

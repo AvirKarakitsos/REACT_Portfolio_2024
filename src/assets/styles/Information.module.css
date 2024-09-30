@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 750px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .list {
@@ -29,11 +30,13 @@
 }
 
 .content {
+    height: 350px;
     border-radius: 5px;
     background-color: grey;
 }
 
 .contentAbout {
+    height: 350px;
     border-radius: 0 5px 5px 5px;
     background-color: grey;
 }
