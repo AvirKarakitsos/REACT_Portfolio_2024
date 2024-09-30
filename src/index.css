@@ -15,7 +15,8 @@
   --color-red: #E80000;
   --opacity-grey: #3C3C3CCC;
   --opacity-green: #32B90380;
-  --white: #FFF;
+  /* --white: #FFF; */
+  --white: #f7f7f7;
   --black: #000;
 }
 
@@ -24,7 +25,7 @@ html {
 }
 
 body {
-font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /********** Common **********/
@@ -208,6 +209,12 @@ row-gap: 5px;
 .font-size-normal {
   font-size: 17px;
 }
+
+/*********** Paragraph ********/
+.line-height {
+  line-height: 1.5em;
+}
+
 
 /*********** Border **********/
 .border-black {

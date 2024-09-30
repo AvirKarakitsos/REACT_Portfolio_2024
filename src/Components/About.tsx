@@ -9,8 +9,8 @@ function About() {
     return(
         <>
             <h2 className="subtitle">{translate(lang).main.about.subtitle}</h2>
-            <p className="section-4">{translate(lang).main.about.content_1}</p>
-            <p className="section-4">{translate(lang).main.about.content_2}</p>
+            <p className="section-4 line-height">{translate(lang).main.about.content_1}</p>
+            <p className="section-4 line-height">{translate(lang).main.about.content_2}</p>
         </>
     )
 }

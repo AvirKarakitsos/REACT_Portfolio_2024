@@ -1,8 +1,11 @@
-.main-container {
+.main {
+    width: 100%;
+}
+
+.container {
     width: 100%;
     max-width: 1440px;
-    margin-bottom: 100px;
-    padding: 45px 100px 0 100px;
+    padding: 45px 100px 100px 100px;
 }
 
 .top-container {
