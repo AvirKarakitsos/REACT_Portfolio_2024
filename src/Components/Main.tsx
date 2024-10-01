@@ -81,7 +81,7 @@ function Main() {
                                                         className="list-filter" 
                                                         onClick={() => handleFilter(category.name)}
                                                         >
-                                                        <button className={tag === category.name ? "btn-filter btn bg-green no-border" : "btn-filter btn bg-green-opacity no-border"}>{translate(lang).main.projects[category.name]}</button>
+                                                        <button className={tag === category.name ? "btn-filter btn bg-green no-border" : "btn-filter btn bg-green-opacity no-border"}>{translate(lang).main.projects.categories[category.name]}</button>
                                                     </li>)}
                         {/* { allCategories?.map( category => <Category category={category} handleFilter={handleFilter} tag={tag} key={category._id}/>) } */}
                     </ul>

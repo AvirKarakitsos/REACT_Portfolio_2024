@@ -15,6 +15,6 @@ export type ProjectType = {
 
 export type CategoryType = {
     _id: number,
-    name: string,
+    name: 'all' | 'openclassrooms' | '2024',
     color?: string
 }
