@@ -12,7 +12,7 @@ function Skills({tab}: SkillsProps) {
     const {lang} = useContext(LanguageContext) as LanguageContextType
 
     return (
-        <div className={`absolute ${tab === "skills" ? styles["show"] : styles["hidden"]}`}>
+        <div className={`${styles.show} ${tab === "about" ? "" : styles.hidden}`}>
             <h2 className="subtitle">{translate(lang).main.skills.subtitle}</h2>
 
             <div className={styles["skills-container"]}>

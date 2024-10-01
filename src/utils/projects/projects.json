@@ -20,7 +20,8 @@
     {
         "_id":2,
         "title":"Node JS",
-        "imageUrl":"",
+        "imageUrl":"images/project7.png",
+        "imageUrlShort":"images/short_project7.png",
         "tags":"API REST, bcrypt, token, multer, sharp",
         "content":[
             {
@@ -38,7 +39,8 @@
     {
         "_id":3,
         "title":"La bayadère",
-        "imageUrl":"",
+        "imageUrl":"images/bayadere.png",
+        "imageUrlShort":"images/short_bayadere.png",
         "tags":"React, parallax, framer motion, SCSS",
         "content":[
             {

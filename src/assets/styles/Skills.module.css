@@ -1,15 +1,13 @@
-.hidden {
-    width: 720px;
+.show {
+    width: 100%;
+    position: absolute;
     top: 0;
-    left: 750px;
-    transition: left 1500ms;
+    left: 720px;
+    transition: transform 1500ms;
 }
 
-.show {
-    width: 720px;
-    top: 0;
-    left: 0;
-    transition: left 1500ms;
+.hidden {
+    transform: translateX(-720px);
 }
 
 .skills-container {

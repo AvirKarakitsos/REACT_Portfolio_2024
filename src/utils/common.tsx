@@ -7,4 +7,4 @@ export function translate(input: string) {
     if(input === "fr") data = dataFr
     else data = dataEn
     return data
- }
+}

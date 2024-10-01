@@ -28,8 +28,7 @@ function Collapse({isOpen, setIsOpen, project}: CollapseProps) {
                 className={isOpen
                     ? `${styles.collapseOpen} ${styles.content} ${theme === "light" ? "" : "color-white"}`
                     : `${styles.content} ${theme === "light" ? "" : "color-white"}`}>
-                {project.content.map((input) => 
-                    (input.language === lang) && <p className={styles["box-description"]}>{input?.text}</p>)}
+                <p className={styles["box-description"]}>{project.content.filter((input) => (input.language === lang))[0]?.text}</p>
             </div>
         </div>
         )

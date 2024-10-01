@@ -22,6 +22,7 @@ function Card({project, setModal, categories}: CardProps) {
     // const [isLoading, setIsLoading] = useState(true)
     const [isOpen, setIsOpen] = useState(false)
 
+    const url = "http://localhost:5173/"
     const smallUrl = project.imageUrl?.split(".com/")[0] + ".com/small-" + project.imageUrl?.split(".com/")[1];
     const category = categories.filter(category => category.name === project.category)
     // const callback = function(input: string) {
@@ -60,7 +61,7 @@ function Card({project, setModal, categories}: CardProps) {
                 {/* <picture onClick={() => handleModal(project._id)}> */}
                 <picture  onClick={() => handleModal()}>
                     <source media="(max-width: 315px)" srcSet={smallUrl}/>
-                    <img className={styles.image} src={project.imageUrl} alt={`projet ${project.title}`}/>
+                    <img className={styles.image} src={url+project.imageUrl} alt={`projet ${project.title}`}/>
                 </picture>
             </div>
             <section className={styles["box-section"]}>
