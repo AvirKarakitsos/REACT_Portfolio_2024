@@ -12,3 +12,9 @@ export type ProjectType = {
     link: string,
     category: string,
 };
+
+export type CategoryType = {
+    _id: number,
+    name: string,
+    color?: string
+}

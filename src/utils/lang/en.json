@@ -25,6 +25,8 @@
         "projects": {
             "subtitle": "My Projects",
             "all": "All",
+            "openclassrooms": "Openclassrooms",
+            "2024": "2024",
             "link": "Link to the code..."
         }
     },

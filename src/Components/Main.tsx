@@ -15,6 +15,13 @@ import projects from '../utils/projects/projects.json'
 import Card from './Card'
 import Modal from './Modal'
 import Information from './Information'
+import { CategoryType } from '../utils/types/project'
+
+const CATEGORIES: CategoryType[] = [
+    {_id: 1, name: "all"},
+    {_id: 2, name: "openclassrooms", color:"purple"},
+    {_id: 3, name: "2024", color:"blue"}
+]
 
 function Main() {
     const {theme} = useContext(ThemeContext) as ThemeContextType
@@ -26,19 +33,17 @@ function Main() {
     const handleFilter = function(tag: string) {
 		if(tag === "all") {
 			setTable(projects)
-            //console.log(projects)
 		}
 		else {
-            console.log("Erreur!")
-			// const copy = [...projects]
-			// const filter = copy?.filter(element => element.category === tag)
-			//setTable(filter)
+			const copy = [...projects]
+			const filter = copy?.filter(element => element.category === tag)
+			setTable(filter)
 		}
 		setTag(tag)
 	}
 
     return(
-        <main className={`${styles["main"]} ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`}>
+        <main className={`${styles["main"]} ${theme === "light" ? "bg-light-1" : "bg-darker-1"}`}>
             <div className={styles["container"]}>
                 <section className={styles["top-container"]}>
                     <div className="relative">
@@ -64,19 +69,26 @@ function Main() {
                 <section id="project" className="section-1 flex direction-column medium-row-gap">
                     <h2 className="text-center">{translate(lang).main.projects.subtitle}</h2>
                     <ul className={styles["project-filter"]}>
-                        <li 
+                        {/* <li 
                             data-tag="all" 
                             className="list-filter" 
                             onClick={() => handleFilter("all")}
                             >
                             <button className={tag === "all" ? "btn-filter btn bg-green no-border" : "btn-filter btn bg-green-opacity no-border"}>{translate(lang).main.projects.all}</button>
-                        </li>
+                        </li> */}
+                        {CATEGORIES.map(category => <li key={category._id}
+                                                        data-tag={category.name} 
+                                                        className="list-filter" 
+                                                        onClick={() => handleFilter(category.name)}
+                                                        >
+                                                        <button className={tag === category.name ? "btn-filter btn bg-green no-border" : "btn-filter btn bg-green-opacity no-border"}>{translate(lang).main.projects[category.name]}</button>
+                                                    </li>)}
                         {/* { allCategories?.map( category => <Category category={category} handleFilter={handleFilter} tag={tag} key={category._id}/>) } */}
                     </ul>
                     
                     <div className={styles["box-container"]}>
                         {/* { table.map(project => <Card key={project._id} project={project} setModal={setModal} setVideo={setVideo}/>) } */}
-                        { table.map(project => <Card key={project._id} project={project} setModal= {setModal}/>) }
+                        { table.map(project => <Card key={project._id} project={project} categories={CATEGORIES} setModal= {setModal}/>) }
                     </div>
                 </section>
             </div>
