@@ -8,3 +8,5 @@ export function translate(input: string) {
     else data = dataEn
     return data
 }
+
+export const localhostUrl = "http://localhost:5173/"

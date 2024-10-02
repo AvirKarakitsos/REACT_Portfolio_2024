@@ -3,13 +3,13 @@ import Collapse from './Collapse'
 import { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../utils/context/ThemeContext';
 import { LanguageContext } from '../utils/context/LanguageContext'
-import { translate } from '../utils/common'
-import { ProjectType, CategoryType } from '../utils/types/project';
+import { localhostUrl, translate } from '../utils/common'
+import { ProjectType, CategoryType, ObjectModal } from '../utils/types/project';
 import { ThemeContextType, LanguageContextType } from '../utils/types/context';
 
 type CardProps = {
     project: ProjectType,
-    setModal: (input: boolean) => void,
+    setModal(newState: ObjectModal | ((prevState: ObjectModal) => ObjectModal)): void,
     categories: CategoryType[]
 }
 
@@ -19,7 +19,6 @@ function Card({project, setModal, categories}: CardProps) {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
     const [isOpen, setIsOpen] = useState(false)
 
-    const url = "http://localhost:5173/"
     const smallUrl = project.imageUrl?.split(".com/")[0] + ".com/small-" + project.imageUrl?.split(".com/")[1];
     const category = categories.filter(category => category.name === project.category)
   
@@ -28,6 +27,14 @@ function Card({project, setModal, categories}: CardProps) {
             setWindowWidth(window.innerWidth)
         })
     },[])
+
+    function handleModal(id: number) {
+        setModal((prevState: ObjectModal) => ({
+            ...prevState,
+            isOpen: true,
+            videoId: id
+        }))
+    }
 
     return (
         <article 
@@ -41,9 +48,9 @@ function Card({project, setModal, categories}: CardProps) {
             </div>
 
             <div>
-                <picture  onClick={() => setModal(true)}>
+                <picture  onClick={() => handleModal(project._id)}>
                     <source media="(max-width: 315px)" srcSet={smallUrl}/>
-                    <img className={styles.image} src={url+project.imageUrl} alt={`projet ${project.title}`}/>
+                    <img className={styles.image} src={localhostUrl+project.imageUrl} alt={`projet ${project.title}`}/>
                 </picture>
             </div>
 

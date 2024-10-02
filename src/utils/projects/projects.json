@@ -3,6 +3,8 @@
         "_id":1,
         "title":"React",
         "imageUrl":"",
+        "imageUrlShort":"",
+        "video": "",
         "tags":"Hooks, Router, SCSS, BEM",
         "content":[
             {
@@ -22,6 +24,7 @@
         "title":"Node JS",
         "imageUrl":"images/project7.png",
         "imageUrlShort":"images/short_project7.png",
+        "video": "videos/Grimoir.mp4",
         "tags":"API REST, bcrypt, token, multer, sharp",
         "content":[
             {
@@ -41,6 +44,7 @@
         "title":"La bayadère",
         "imageUrl":"images/bayadere.png",
         "imageUrlShort":"images/short_bayadere.png",
+        "video": "",
         "tags":"React, parallax, framer motion, SCSS",
         "content":[
             {

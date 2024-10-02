@@ -10,7 +10,7 @@ import { translate } from '../utils/common'
 import { ThemeContext } from '../utils/context/ThemeContext'
 import { LanguageContext } from '../utils/context/LanguageContext'
 import { ThemeContextType, LanguageContextType } from '../utils/types/context'
-import { ProjectType } from '../utils/types/project'
+import { ObjectModal, ProjectType } from '../utils/types/project'
 import projects from '../utils/projects/projects.json'
 import Card from './Card'
 import Modal from './Modal'
@@ -28,7 +28,7 @@ function Main() {
     const {lang} = useContext(LanguageContext) as LanguageContextType
     const [table, setTable] = useState<ProjectType[]>(projects)
     const [tag, setTag] = useState("all")
-    const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState<ObjectModal>({isOpen: false, videoId: null})
 
     const handleFilter = function(tag: string) {
 		if(tag === "all") {
@@ -65,7 +65,7 @@ function Main() {
 
                 <Information/>
 
-                <Modal  modal={modal} setModal={setModal}/>
+                <Modal  modal={modal} setModal={setModal} projects={projects}/>
 
                 <section id="project" className="section-1 flex direction-column medium-row-gap">
                     <h2 className="text-center">{translate(lang).main.projects.subtitle}</h2>
