@@ -43,7 +43,7 @@ function Main() {
 	}
 
     return(
-        <main className={`${styles["main"]} ${theme === "light" ? "bg-light-1" : "bg-darker-1"}`}>
+        <main className={`${styles["main"]} ${theme === "light" ? "bg-light-2" : "bg-darker-1"}`}>
             <div className={styles["container"]}>
                 <section className={styles["top-container"]}>
                     <div className="relative">
