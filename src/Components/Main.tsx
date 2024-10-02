@@ -43,8 +43,9 @@ function Main() {
 	}
 
     return(
-        <main className={`${styles["main"]} ${theme === "light" ? "bg-light-2" : "bg-darker-1"}`}>
+        <main className={`${styles["main"]} ${theme === "light" ? "bg-light-2" : "bg-darker-1 color-white"}`}>
             <div className={styles["container"]}>
+
                 <section className={styles["top-container"]}>
                     <div className="relative">
                         <div className={`${styles["frame-left"]} absolute ${theme === "light" ? "border-black" : "border-white"}`}></div>
@@ -62,20 +63,13 @@ function Main() {
                     </div>
                 </section>
 
-            <Information/>
+                <Information/>
 
                 <Modal  modal={modal} setModal={setModal}/>
 
                 <section id="project" className="section-1 flex direction-column medium-row-gap">
                     <h2 className="text-center">{translate(lang).main.projects.subtitle}</h2>
                     <ul className={styles["project-filter"]}>
-                        {/* <li 
-                            data-tag="all" 
-                            className="list-filter" 
-                            onClick={() => handleFilter("all")}
-                            >
-                            <button className={tag === "all" ? "btn-filter btn bg-green no-border" : "btn-filter btn bg-green-opacity no-border"}>{translate(lang).main.projects.all}</button>
-                        </li> */}
                         {CATEGORIES.map(category => <li key={category._id}
                                                         data-tag={category.name} 
                                                         className="list-filter" 
@@ -83,14 +77,13 @@ function Main() {
                                                         >
                                                         <button className={tag === category.name ? "btn-filter btn bg-green no-border" : "btn-filter btn bg-green-opacity no-border"}>{translate(lang).main.projects.categories[category.name]}</button>
                                                     </li>)}
-                        {/* { allCategories?.map( category => <Category category={category} handleFilter={handleFilter} tag={tag} key={category._id}/>) } */}
                     </ul>
                     
                     <div className={styles["box-container"]}>
-                        {/* { table.map(project => <Card key={project._id} project={project} setModal={setModal} setVideo={setVideo}/>) } */}
                         { table.map(project => <Card key={project._id} project={project} categories={CATEGORIES} setModal= {setModal}/>) }
                     </div>
                 </section>
+
             </div>
         </main>
     )

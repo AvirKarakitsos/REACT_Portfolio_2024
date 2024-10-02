@@ -14,14 +14,17 @@ function Information() {
 
     return(
         <section className={styles.container}>
+
             <ul className={styles.list}>
-                <li className={`${theme === "light" ? "" : "bg-darker-2"} ${tab === "about" ? styles.itemSelected : styles.item}`} onClick={() => setTab("about")}>{translate(lang).main.about.tab}</li>
-                <li className={` ${theme === "light" ? "" : "bg-darker-2"} ${tab === "skills" ? styles.itemSelected : styles.item}`} onClick={() => setTab("skills")}>{translate(lang).main.skills.tab}</li>
+                <li className={`${theme === "light" ? "bg-light-1" : "bg-darker-2"} ${tab === "about" ? styles.itemSelected : styles.item}`} onClick={() => setTab("about")}>{translate(lang).main.about.tab}</li>
+                <li className={` ${theme === "light" ? "bg-light-1" : "bg-darker-2"} ${tab === "skills" ? styles.itemSelected : styles.item}`} onClick={() => setTab("skills")}>{translate(lang).main.skills.tab}</li>
             </ul>
-            <div className={`relative ${styles.content} ${tab === "about" ? styles.contentAbout : ""}  ${theme === "light" ? "" : "bg-darker-2"}`}>
+
+            <div className={`relative ${styles.content} ${tab === "about" ? styles.contentAbout : ""}  ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`}>
                 <About tab={tab}/>
                 <Skills tab={tab}/>
             </div>
+            
         </section>
     )
 }

@@ -15,12 +15,14 @@ function Header() {
 	const [open, setOpen] = useState(false)
 	
     return (
-        <header className={`${styles.header} ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`}>
+        <header className={`${styles.header} ${theme === "light" ? "bg-light-1" : "bg-darker-2 color-white"}`}>
 			{theme === "light"
 				? <img className="size-50" src={logo1} alt="logo"/>
 				: <img className="size-50" src={logo2} alt="logo"/>
 			}
+
 			<nav className="relative flex justify-space small-column-gap cursor-default">
+				
 				<ul className={!open 
 					? `${styles.anchor} flex-row-to-column align-center justify-center small-column-gap no-bullet ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`
 					: `${styles.anchor} ${styles.slide} flex-row-to-column align-center justify-center small-column-gap no-bullet ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`}> 
@@ -34,6 +36,7 @@ function Header() {
 					<li className={`${styles["list-lang"]} ${lang === "fr" ? "border-blue" : ""}`} onClick={() => toggleLanguage("fr")}><button className="no-border">FR</button></li>
 					<li className={`${styles["list-lang"]} ${lang === "en" ? "border-blue" : ""}`} onClick={() => toggleLanguage("en")}><button className="no-border">EN</button></li>
 				</ul>
+
 				<ul className="flex align-center no-bullet small-column-gap">
 					{theme === "light"
 						? <li><button  onClick={() => toggleTheme("dark")} className="no-border flex align-center tiny-column-gap btn bg-dark font-size-normal"><i className="fa-regular fa-moon color-white"></i>{translate(lang).header.mode}</button></li>
@@ -48,6 +51,7 @@ function Header() {
 						</button>
 					</li>
 				</ul>
+
 			</nav>
         </header>
     )
