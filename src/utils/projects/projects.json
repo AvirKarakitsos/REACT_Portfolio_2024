@@ -49,11 +49,11 @@
         "content":[
             {
                 "language":"fr",
-                "text":"Site statique présentant un ballet classique, la Bayadère. Le site a été codé en React JS. Réalisation d'animations de parallax avec la librairie framer-motion. Il y a également une galerie d'images en slide continu. Le lien ci-dessous vous redirige vers le site."
+                "text":"Site d'informattions sur le ballet classique, la Bayadère. Le site a été codé en React JS. Réalisation d'animations de parallax avec la librairie framer-motion. Il y a également une galerie d'images en slide continu. Le lien ci-dessous vous redirige vers le site."
             },
             {
                 "language":"en",
-                "text":""
+                "text":"Information site about the classical ballet, La Bayadère. The site was coded in React JS. Parallax animations were created using the Framer Motion library. There is also a continuously sliding image gallery. The link below redirects you to the site."
             }
         ],
         "link":"https://labayadere.onrender.com/",
