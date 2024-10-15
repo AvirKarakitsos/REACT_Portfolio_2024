@@ -39,8 +39,8 @@ function Header() {
 
 				<ul className="flex align-center no-bullet small-column-gap">
 					{theme === "light"
-						? <li><button  onClick={() => toggleTheme("dark")} className="no-border flex align-center tiny-column-gap btn bg-dark font-size-normal"><i className="fa-regular fa-moon color-white"></i>{translate(lang).header.mode}</button></li>
-						: <li><button onClick={() => toggleTheme("light")}  className="no-border flex align-center tiny-column-gap btn bg-light-1 color-black font-size-normal"><i className="fa-solid fa-sun color-black"></i>{translate(lang).header.mode}</button></li>
+						? <li><button  onClick={() => toggleTheme("dark")} className="no-border flex align-center justify-space btn bg-dark font-size-normal"><i className="fa-regular fa-moon color-white"></i>{translate(lang).header.mode}</button></li>
+						: <li><button onClick={() => toggleTheme("light")}  className="no-border flex align-center justify-space btn bg-light-1 color-black font-size-normal"><i className="fa-solid fa-sun color-black"></i>{translate(lang).header.mode}</button></li>
 					}
 					<li>
 						<button

@@ -180,6 +180,7 @@ row-gap: 5px;
 }
 
 .btn {
+  width: 100px;
   padding: 10px 15px;
   border-radius: 30px;
 }
@@ -193,8 +194,15 @@ row-gap: 5px;
   height: 35px;
 }
 
+.btn-filter {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+}
+
 .btn-filter:hover {
-  background-color: #32B903BF;
+  color: var(--opacity-grey);
 }
 
 /********** Font-size **********/

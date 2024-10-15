@@ -75,7 +75,7 @@ function Main() {
                                                         className="list-filter" 
                                                         onClick={() => handleFilter(category.name)}
                                                         >
-                                                        <button className={tag === category.name ? "btn-filter btn bg-green no-border" : "btn-filter btn bg-green-opacity no-border"}>{translate(lang).main.projects.categories[category.name]}</button>
+                                                        <button className={`btn-filter no-border ${tag === category.name ? "" : "color-grey"}`}>{translate(lang).main.projects.categories[category.name]}</button>
                                                     </li>)}
                     </ul>
                     
