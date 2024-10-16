@@ -3,7 +3,7 @@ import Collapse from './Collapse'
 import { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../utils/context/ThemeContext';
 import { LanguageContext } from '../utils/context/LanguageContext'
-import { localhostUrl, translate } from '../utils/common'
+import { url, translate } from '../utils/common'
 import { ProjectType, CategoryType, ObjectModal } from '../utils/types/project';
 import { ThemeContextType, LanguageContextType } from '../utils/types/context';
 
@@ -50,7 +50,7 @@ function Card({project, setModal, categories}: CardProps) {
             <div>
                 <picture  onClick={() => handleModal(project._id)}>
                     <source media="(max-width: 315px)" srcSet={smallUrl}/>
-                    <img className={styles.image} src={localhostUrl+project.imageUrl} alt={`projet ${project.title}`}/>
+                    <img className={styles.image} src={url+project.imageUrl} alt={`projet ${project.title}`}/>
                 </picture>
             </div>
 

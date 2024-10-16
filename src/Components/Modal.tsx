@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styles from '../assets/styles/Modal.module.css'
 import { ObjectModal, ProjectType } from '../utils/types/project';
-import { localhostUrl } from '../utils/common';
+import { url } from '../utils/common';
 
 type ModalType = {
     modal: ObjectModal,
@@ -32,8 +32,8 @@ function Modal({modal, setModal, projects}: ModalType) {
             }>
             <div className="modal-container flex" onClick ={(event) => event.stopPropagation()}>
                 {modal.isOpen && projects.filter(project => project._id === modal.videoId)[0].video != ""
-                    ? <video className={styles.video} src={localhostUrl+projects.filter(project => project._id === modal.videoId)[0].video} controls autoPlay muted={true}></video>
-                    : <img src={localhostUrl+projects.filter(project => project._id === modal.videoId)[0].imageUrl}/>
+                    ? <video className={styles.video} src={url+projects.filter(project => project._id === modal.videoId)[0].video} controls autoPlay muted={true}></video>
+                    : <img src={url+projects.filter(project => project._id === modal.videoId)[0].imageUrl}/>
                 }
                 </div>
         </dialog>
