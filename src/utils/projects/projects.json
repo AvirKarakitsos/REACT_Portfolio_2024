@@ -9,11 +9,11 @@
         "content":[
             {
                 "language":"fr",
-                "text":"Refonte de la partie frontend d'un site immobilier. J'ai appris les bases de React avec la construction du code à l'aide de composants. J'ai pu utiliser la librairie react-router-dom, ainsi que les hooks useState et useEffect. De façon générale j'ai appris l'avantage de travailler avec la librairie React. A noter sur ce projet l'utilisation de SCSS avec l’architecture BEM qui m'a plutôt convaincu."
+                "text":"Site immobilier des appartements dont j’étais responsable à Fianarantsoa, à Madagascar. Site codé en React, j’ai pu utiliser la base d’un code réalisé lors de ma formation Openclassrooms. Durant ce projet j'ai pu apprendre les bases de React avec la construction du code à l'aide de composants, l’utilisation de hooks et de la librairie react-router-dom. A noter le style du projet codé de SCSS avec l’architecture BEM."
             },
             {
                 "language":"en",
-                "text":"Rebuild of the frontend part of the real estate website. I’ve learned the fondamentals of React, coding with reusable components. I used the package react-router-dom and hooks (useState, useEffect). Globally I’ve  learned the benefits of working with React. You can notice that the stylesheet is made with SCSS and BEM structure that I liked to work with."
+                "text":"Real estate site for the apartments I was responsible for in Fianarantsoa, Madagascar. The site was coded in React, and I was able to use a base code from my OpenClassrooms training. During this project, I learned the basics of React, including building the code with components, using hooks, and the react-router-dom library. It’s worth mentioning that the project’s style was coded in SCSS with the BEM architecture."
             }
         ],
         "link":"https://github.com/AvirKarakitsos/OC_project6_react",
