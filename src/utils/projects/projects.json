@@ -1,9 +1,9 @@
 [
     {
         "_id":1,
-        "title":"React",
-        "imageUrl":"",
-        "imageUrlShort":"",
+        "title":"Villa Helene",
+        "imageUrl":"images/villa_helene.png",
+        "imageUrlShort":"images/short_villa_helene.png",
         "video": "",
         "tags":"Hooks, Router, SCSS, BEM",
         "content":[
