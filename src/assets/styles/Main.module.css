@@ -1,11 +1,23 @@
 .main {
     width: 100%;
+    overflow: hidden;
 }
 
 .container {
     width: 100%;
     max-width: 1440px;
+    position: relative;
     padding: 45px 100px 100px 100px;
+}
+
+.baobab-left {
+    top: 1000px;
+    left: -500px;
+}
+
+.baobab-right {
+    top: 1000px;
+    right: -500px;
 }
 
 .top-container {

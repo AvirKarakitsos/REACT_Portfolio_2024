@@ -4,6 +4,8 @@ import github from '../assets/images/github.png'
 import twitter from '../assets/images/x-logo.jpg'
 import instagram from '../assets/images/insta.png'
 import gmail from '../assets/images/gmail.png'
+import baobabBlack from '../assets/images/baobab_black.svg'
+import baobabWhite from '../assets/images/baobab_white.svg'
 
 import { useContext, useState } from 'react'
 import { translate } from '../utils/common'
@@ -45,6 +47,17 @@ function Main() {
     return(
         <main className={`${styles["main"]} ${theme === "light" ? "bg-light-2" : "bg-darker-1 color-white"}`}>
             <div className={styles["container"]}>
+                {
+                    theme === "light"
+                        ? <>
+                            <img src={baobabBlack} alt="baobab" className={`absolute ${styles["baobab-left"]}`}/>
+                            <img src={baobabBlack} alt="baobab" className={`absolute ${styles["baobab-right"]}`}/>            
+                        </>
+                        : <>
+                            <img src={baobabWhite} alt="baobab" className={`absolute ${styles["baobab-left"]}`}/>
+                            <img src={baobabWhite} alt="baobab" className={`absolute ${styles["baobab-right"]}`}/>
+                        </>
+                }
 
                 <section className={styles["top-container"]}>
                     <div className="relative">
