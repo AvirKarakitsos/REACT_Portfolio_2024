@@ -9,5 +9,5 @@ export function translate(input: string) {
     return data
 }
 
-export const url = "http://localhost:5173/"
-//export const url = "http://arnocotsoyannis.onrender.com/"
+//export const url = "http://localhost:5173/"
+export const url = "http://arnocotsoyannis.onrender.com/"
