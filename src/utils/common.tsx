@@ -10,4 +10,4 @@ export function translate(input: string) {
 }
 
 //export const url = "http://localhost:5173/"
-export const url = "http://arnocotsoyannis-v2.onrender.com/"
+export const url = "https://arnocotsoyannis-v2.onrender.com/"
