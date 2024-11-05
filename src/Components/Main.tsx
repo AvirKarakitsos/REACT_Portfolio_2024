@@ -2,7 +2,7 @@ import styles from '../assets/styles/Main.module.css'
 import photo from '../assets/images/photo-baobab.png'
 import github from '../assets/images/github.png'
 import twitter from '../assets/images/x-logo.jpg'
-import instagram from '../assets/images/insta.png'
+import linkedin from '../assets/images/linkedin.png'
 import gmail from '../assets/images/gmail.png'
 import baobabBlack from '../assets/images/baobab_black.svg'
 import baobabWhite from '../assets/images/baobab_white.svg'
@@ -69,7 +69,7 @@ function Main() {
                         <h2 className={styles.subtitle}>{translate(lang).main.part1.subtitle}</h2>
                         <ul className={`${styles["links-container"]} no-bullet relative`}>
                             <li className={`${styles["link-1"]} absolute`}><a href="https://github.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={30} width={30} className="border-cercle" src={github} alt="lien github"/></a></li>
-                            <li className={`${styles["link-2"]} absolute`}><a href="https://www.instagram.com/avir.karakitsos" target="_blank" rel="noopener noreferrer"><img height={30} width={30} className="border-cercle" src={instagram} alt="lien instagram"/></a></li>
+                            <li className={`${styles["link-2"]} absolute`}><a href="https://www.linkedin.com/in/arno-c-b9b56531a/" target="_blank" rel="noopener noreferrer"><img height={30} width={30} className="border-cercle" src={linkedin} alt="lien instagram"/></a></li>
                             <li className={`${styles["link-3"]} absolute`}><a href="https://twitter.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={30} width={30} className="border-cercle" src={twitter} alt="lien twitter"/></a></li>
                             <li className={`${styles["link-4"]} absolute`}><img height={30} width={30} className="border-cercle" onClick={() => alert('arnocotso8@gmail.com')} src={gmail} alt="email"/></li>
                         </ul>

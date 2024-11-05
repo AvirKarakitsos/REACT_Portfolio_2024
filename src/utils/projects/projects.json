@@ -49,7 +49,7 @@
         "content":[
             {
                 "language":"fr",
-                "text":"Site d'informattions sur le ballet classique, la Bayadère. Le site a été codé en React JS. Réalisation d'animations de parallax avec la librairie framer-motion. Il y a également une galerie d'images en slide continu. Le lien ci-dessous vous redirige vers le site."
+                "text":"Site d'informations sur le ballet classique, la Bayadère. Le site a été codé en React JS. Réalisation d'animations de parallax avec la librairie framer-motion. Il y a également une galerie d'images en slide continu. Le lien ci-dessous vous redirige vers le site."
             },
             {
                 "language":"en",
@@ -57,6 +57,26 @@
             }
         ],
         "link":"https://labayadere.onrender.com/",
+        "category":"2024"
+    },
+    {
+        "_id":4,
+        "title":"Site de e-commerce",
+        "imageUrl":"images/shop.png",
+        "imageUrlShort":"images/short_shop.png",
+        "video": "",
+        "tags":"Full Stack, React, Fastify, Stripe, redux toolkit",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Site d'un e-commerce en full stack Javascript. Le côté client a été codé avec React et utilise redux afin de gérer les achats du client. Utilisation de Node JS et du framework Fastify afin de codé une API graphQL qui fournit les informations sur les produits mis en vente. La base de données est MongoDB Atlas. Le site utilise l'API Stripe pour gérer le paiement de l'utilisateur."
+            },
+            {
+                "language":"en",
+                "text":"An e-commerce site built with a full-stack JavaScript approach. The client side is coded with React and uses Redux to manage customer purchases. Node.js and the Fastify framework were used to develop a GraphQL API that provides information about the products for sale. The database is MongoDB Atlas. The site uses the Stripe API to handle user payments."
+            }
+        ],
+        "link":"https://github.com/AvirKarakitsos/REACT_ecommerce_frontend",
         "category":"2024"
     }
 ]

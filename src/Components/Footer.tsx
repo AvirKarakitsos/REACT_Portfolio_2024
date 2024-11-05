@@ -19,7 +19,7 @@ function Footer() {
 			<ul className="flex small-column-gap no-bullet">
 				<li><a href="https://github.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer">github</a></li>
 				<li><a href="https://twitter.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer">twitter/X</a></li>
-				<li><a href="https://www.instagram.com/avir.karakitsos" target="_blank" rel="noopener noreferrer">instagram</a></li>
+				<li><a href="https://www.linkedin.com/in/arno-c-b9b56531a/" target="_blank" rel="noopener noreferrer">linkedin</a></li>
 			</ul>
 
 			<picture>
