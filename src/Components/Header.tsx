@@ -1,7 +1,7 @@
 import styles from '../assets/styles/Header.module.css'
 import logo1 from '../assets/images/logo-light.png'
 import logo2 from '../assets/images/logo-dark.png'
-import CV from "../assets/files/CV_Arno.pdf"
+import CV from "../assets/files/CV_Arno_2025.pdf"
 import { useContext, useState } from 'react'
 import { ThemeContext } from '../utils/context/ThemeContext.js'
 import { LanguageContext } from '../utils/context/LanguageContext.js'
