@@ -25,9 +25,10 @@
         "projects": {
             "subtitle": "My Projects",
             "categories": {
-                "all": "Tous",
-                "openclassrooms": "Openclassrooms",
-                "2024": "2024"
+                "all": "All",
+                "fullstack": "Full Stack",
+                "react": "React JS",
+                "node": "Node JS"
             },
             "link": "Link to the site/code..."
         }

@@ -21,8 +21,9 @@ import { CategoryType } from '../utils/types/project'
 
 const CATEGORIES: CategoryType[] = [
     {_id: 1, name: "all"},
-    {_id: 2, name: "openclassrooms", color:"purple"},
-    {_id: 3, name: "2024", color:"blue"}
+    {_id: 2, name: "fullstack", color:"purple"},
+    {_id: 3, name: "react", color:"blue"},
+    {_id: 3, name: "node", color:"green"}
 ]
 
 function Main() {

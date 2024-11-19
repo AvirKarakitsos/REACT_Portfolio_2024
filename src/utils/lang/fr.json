@@ -26,8 +26,9 @@
             "subtitle": "Mes Projets",
             "categories": {
                 "all": "Tous",
-                "openclassrooms": "Openclassrooms",
-                "2024": "2024"
+                "fullstack": "Full Stack",
+                "react": "React JS",
+                "node": "Node JS"
             },
             "link": "Voir le site/code..."
         }

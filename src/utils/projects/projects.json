@@ -16,12 +16,12 @@
                 "text":"Real estate site for the apartments I was responsible for in Fianarantsoa, Madagascar. The site was coded in React, and I was able to use a base code from my OpenClassrooms training. During this project, I learned the basics of React, including building the code with components, using hooks, and the react-router-dom library. It’s worth mentioning that the project’s style was coded in SCSS with the BEM architecture."
             }
         ],
-        "link":"https://github.com/AvirKarakitsos/OC_project6_react",
-        "category":"openclassrooms"
+        "link":"https://villahelene.onrender.com",
+        "category":"react"
     },
     {
         "_id":2,
-        "title":"Node JS",
+        "title":"Le Grimoire",
         "imageUrl":"images/project7.png",
         "imageUrlShort":"images/short_project7.png",
         "video": "videos/Grimoir.mp4",
@@ -37,7 +37,7 @@
             }
         ],
         "link":"https://github.com/AvirKarakitsos/OC_project7_node_express_mongodb",
-        "category":"openclassrooms"
+        "category":"node"
     },
     {
         "_id":3,
@@ -57,11 +57,11 @@
             }
         ],
         "link":"https://labayadere.onrender.com/",
-        "category":"2024"
+        "category":"react"
     },
     {
         "_id":4,
-        "title":"Site de e-commerce",
+        "title":"E-Shop",
         "imageUrl":"images/shop.png",
         "imageUrlShort":"images/short_shop.png",
         "video": "",
@@ -77,6 +77,26 @@
             }
         ],
         "link":"https://github.com/AvirKarakitsos/REACT_ecommerce_frontend",
-        "category":"2024"
+        "category":"fullstack"
+    },
+    {
+        "_id":5,
+        "title":"Messagerie instantanée",
+        "imageUrl":"images/chat.png",
+        "imageUrlShort":"images/short_chat.png",
+        "video": "",
+        "tags":"API Websockets, socket.io, SSR, Node JS, Fastify, mySQL",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Site de messagerie instantanée, avec un rendu côté serveur (SSR). Utilisation du framework Fastify, de la librairie _socket.io_. Base de données avec mySQL."
+            },
+            {
+                "language":"en",
+                "text":"Instant messaging site with server-side rendering (SSR). Built using the Fastify framework and the socket.io library. Database powered by MySQL."
+            }
+        ],
+        "link":"https://github.com/AvirKarakitsos/FASTIFY_chat_SSR",
+        "category":"node"
     }
 ]
