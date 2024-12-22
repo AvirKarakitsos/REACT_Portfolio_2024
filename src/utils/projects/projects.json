@@ -98,5 +98,25 @@
         ],
         "link":"https://github.com/AvirKarakitsos/FASTIFY_chat_SSR",
         "category":"node"
+    },
+    {
+        "_id":6,
+        "title":"Découverte de Mulesoft",
+        "imageUrl":"images/chat.png",
+        "imageUrlShort":"images/short_chat.png",
+        "video": "",
+        "tags":"Article, React",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Article présentant la plateforme d'intégration Mulesoft. Elle permet d'améliorer la connexion des services et applications au sein d'une entreprise grâce à l'utilisation d'API. Le but pour l'entreprise est de gagner en rapidité et productivité. Nous présenterons la façon dont Mulesoft permet l'intégration d'API dans son intégralité: de son design à son déploiement et sa gestion."
+            },
+            {
+                "language":"en",
+                "text":"Article introducing the Mulesoft integration platform. It enhances the connection of services and applications within a company through the use of APIs. The goal for the company is to achieve greater speed and productivity. We will present how Mulesoft enables comprehensive API integration: from design to deployment and management."
+            }
+        ],
+        "link":"https://github.com/AvirKarakitsos/REACT_mulesoft",
+        "category":"react"
     }
 ]
