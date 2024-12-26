@@ -102,8 +102,8 @@
     {
         "_id":6,
         "title":"Découverte de Mulesoft",
-        "imageUrl":"images/chat.png",
-        "imageUrlShort":"images/short_chat.png",
+        "imageUrl":"images/mulesoft.png",
+        "imageUrlShort":"images/short_mulesoft.png",
         "video": "",
         "tags":"Article, React",
         "content":[
