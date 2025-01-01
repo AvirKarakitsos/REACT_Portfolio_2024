@@ -6,6 +6,7 @@ type ContentType = {
 export type ProjectType = {
     _id: number,
     title: string,
+    date: string,
     imageUrl: string,
     imageUrlShort: string,
     video: string,
