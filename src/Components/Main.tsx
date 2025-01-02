@@ -82,7 +82,7 @@ function Main() {
                 <Modal  modal={modal} setModal={setModal} projects={projects}/>
 
                 <section id="project" className="section-1 flex direction-column medium-row-gap">
-                    <h2 className="text-center">{translate(lang).main.projects.subtitle}</h2>
+                    <h2 className="subtitle">{translate(lang).main.projects.subtitle}</h2>
                     <ul className={styles["project-filter"]}>
                         {CATEGORIES.map(category => <li key={category._id}
                                                         data-tag={category.name} 

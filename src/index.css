@@ -58,7 +58,8 @@ a{
 
 /********** Title ************/
 .subtitle {
-  padding: 40px 40px 20px 40px;
+  padding: 40px 0px 20px 0px;
+  text-align: center;
   font-size: 20px;
   font-weight: 600;
 }
@@ -85,7 +86,7 @@ a{
 }
 /***** Gap *****/
 .medium-column-gap {
-  column-gap: 50px;
+  column-gap: 40px;
 }
 .small-column-gap {
   column-gap: 15px;
