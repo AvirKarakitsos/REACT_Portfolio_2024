@@ -43,6 +43,16 @@
     font-size: 15px;
 }
 
+.box-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    font-style: italic;
+    font-size: .8rem;
+}
+
 @media screen and (max-width: 750px) {
     .image {
         height: 185px;

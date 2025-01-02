@@ -60,7 +60,10 @@ function Card({project, setModal, categories}: CardProps) {
                     ? <Collapse isOpen={isOpen} setIsOpen={setIsOpen} project={project}/>
                     : <p className={styles["box-description"]}>{project.content.filter((input) => (input.language === lang))[0]?.text}</p>
                 }
-                <p><a href={project.link} target="_blank" rel="noreferrer" className={theme === "light" ? "color-grey" : "color-white"}>{translate(lang).main.projects.link}</a></p>
+                <div className={styles["box-bottom"]}>
+                    <p><a href={project.link} target="_blank" rel="noreferrer" className={theme === "light" ? "color-grey" : "color-white"}>{translate(lang).main.projects.link}</a></p>
+                    <p className={styles.date}>{project.date}</p>
+                </div>
             </section>
             
         </article>    
