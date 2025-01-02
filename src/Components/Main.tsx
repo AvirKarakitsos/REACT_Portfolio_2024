@@ -8,7 +8,7 @@ import baobabBlack from '../assets/images/baobab_black.svg'
 import baobabWhite from '../assets/images/baobab_white.svg'
 
 import { useContext, useState } from 'react'
-import { translate } from '../utils/common'
+import { sortByDate, translate } from '../utils/common'
 import { ThemeContext } from '../utils/context/ThemeContext'
 import { LanguageContext } from '../utils/context/LanguageContext'
 import { ThemeContextType, LanguageContextType } from '../utils/types/context'
@@ -29,21 +29,31 @@ const CATEGORIES: CategoryType[] = [
 function Main() {
     const {theme} = useContext(ThemeContext) as ThemeContextType
     const {lang} = useContext(LanguageContext) as LanguageContextType
+
     const [table, setTable] = useState<ProjectType[]>(projects)
+    const [isChecked, setIsChecked] = useState(true)
     const [tag, setTag] = useState("all")
     const [modal, setModal] = useState<ObjectModal>({isOpen: false, videoId: null})
 
-    const handleFilter = function(tag: string) {
+    const handleFilter = function(tag: string, isTrue: boolean) {
 		if(tag === "all") {
-			setTable(projects)
+            const copy = [...projects]
+            const filterSort = sortByDate(copy, isTrue)
+			setTable(filterSort)
 		}
 		else {
 			const copy = [...projects]
 			const filter = copy?.filter(element => element.category === tag)
-			setTable(filter)
+            const filterSort = sortByDate(filter, isTrue)
+			setTable(filterSort)
 		}
 		setTag(tag)
 	}
+
+    const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setIsChecked(event.target.checked);
+        handleFilter(tag, event.target.checked);
+      };
 
     return(
         <main className={`${styles["main"]} ${theme === "light" ? "bg-light-2" : "bg-darker-1 color-white"}`}>
@@ -87,12 +97,17 @@ function Main() {
                         {CATEGORIES.map(category => <li key={category._id}
                                                         data-tag={category.name} 
                                                         className="list-filter" 
-                                                        onClick={() => handleFilter(category.name)}
+                                                        onClick={() => handleFilter(category.name, isChecked)}
                                                         >
                                                         <button className={`btn-filter no-border ${tag === category.name ? "" : "color-grey"}`}>{translate(lang).main.projects.categories[category.name]}</button>
-                                                    </li>)}
+                                                    </li>)}                                
+                                                    <li>
+                                                        <input type="checkbox" id="scales" name="scales" 
+                                                            checked={isChecked} 
+                                                            onChange={handleCheckboxChange}/>
+                                                        <label htmlFor="scales">Scales</label>
+                                                    </li>
                     </ul>
-                    
                     <div className={styles["box-container"]}>
                         { table.map(project => <Card key={project._id} project={project} categories={CATEGORIES} setModal= {setModal}/>) }
                     </div>

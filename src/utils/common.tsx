@@ -10,13 +10,14 @@ export function translate(input: string) {
     return data
 }
 
-export function sortByDate(table: ProjectType[]) {
+export function sortByDate(table: ProjectType[], isTrue: boolean) {
     table.sort((a, b) => {
 
         const [monthA, yearA] = a.date.split("-").map(Number);
         const [monthB, yearB] = b.date.split("-").map(Number);
-      
-        return yearA - yearB || monthA - monthB;
+
+        if(isTrue) return yearA - yearB || monthA - monthB;
+        else return yearB - yearA || monthB - monthA;
       });
 
     return table
