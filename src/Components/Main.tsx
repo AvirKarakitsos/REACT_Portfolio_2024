@@ -102,10 +102,15 @@ function Main() {
                                                         <button className={`btn-filter no-border ${tag === category.name ? "" : "color-grey"}`}>{translate(lang).main.projects.categories[category.name]}</button>
                                                     </li>)}                                
                                                     <li>
-                                                        <input type="checkbox" id="scales" name="scales" 
+                                                        <input type="checkbox" className={styles.sort} id="sort" name="sort" 
                                                             checked={isChecked} 
                                                             onChange={handleCheckboxChange}/>
-                                                        <label htmlFor="scales">Scales</label>
+                                                        <label htmlFor="sort" className={styles.labelSort}>
+                                                            {isChecked 
+                                                                ? <><i className="fa-solid fa-arrow-up-wide-short iconeSort"></i><span className={styles.iconeTitle}>{translate(lang).main.projects.sort[1]}</span></>
+                                                                : <><i className="fa-solid fa-arrow-down-short-wide iconeSort"></i><span className={styles.iconeTitle}>{translate(lang).main.projects.sort[0]}</span></>
+                                                            }
+                                                        </label>
                                                     </li>
                     </ul>
                     <div className={styles["box-container"]}>

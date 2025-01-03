@@ -30,6 +30,7 @@
                 "react": "React JS",
                 "node": "Node JS"
             },
+            "sort": ["les plus ancients","les plus récents"],
             "link": "Voir le site/code..."
         }
     },

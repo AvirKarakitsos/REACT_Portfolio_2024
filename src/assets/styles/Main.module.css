@@ -139,6 +139,15 @@
     cursor: default;
 }
 
+.sort {
+    display: none;
+}
+.iconeTitle {
+    margin-left: 5px;
+    font-size: 15px;
+    font-style: italic;
+  }
+
 @media screen and (max-width: 1080px) {
     .div-right {
         height: 328px;

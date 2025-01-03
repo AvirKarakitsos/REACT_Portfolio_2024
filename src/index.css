@@ -334,6 +334,12 @@ row-gap: 5px;
   color: var(--color-grey);
 }
 
+/*************icones*/
+.iconeSort{
+  font-size: 20px;
+  color: grey;
+}
+
 /**********Media Query*/
 /***Mobile***/
 @media screen and (max-width: 750px) {

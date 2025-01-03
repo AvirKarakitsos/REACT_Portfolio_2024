@@ -30,6 +30,7 @@
                 "react": "React JS",
                 "node": "Node JS"
             },
+            "sort": ["oldest first","most recent"],
             "link": "Link to the site/code..."
         }
     },
